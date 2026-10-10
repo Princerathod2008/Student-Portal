@@ -2,38 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account - Student Portal</title>
+    <title>Create New Account</title>
 </head>
-<body>
-    <header>
-        <h1>Create Student Account</h1>
-        <nav><a href="homepage.html">Home</a> | <a href="login.html">Login</a></nav>
+<body bgcolor="#f2f2f2">
+
+    <header align="center">
+        <table width="100%" bgcolor="#198754" cellpadding="15">
+            <tr>
+                <td align="center">
+                    <font color="white" size="6"><b>Student Portal</b></font>
+                </td>
+            </tr>
+        </table>
     </header>
-    <hr>
-    <main>
-        <section>
-            <h2>Registration Form</h2>
-            <form action="#" method="get">
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <p><label for="fullname">Full Name:</label><br><input type="text" id="fullname" name="fullname" required></p>
-                    <p><label for="studentid">Student ID:</label><br><input type="text" id="studentid" name="studentid" required></p>
-                    <p><label for="email">Email Address:</label><br><input type="email" id="email" name="email" required></p>
-                    <p><label for="phone">Phone Number:</label><br><input type="tel" id="phone" name="phone"></p>
-                </fieldset>
-                <fieldset>
-                    <legend>Account Security</legend>
-                    <p><label for="password">Create Password:</label><br><input type="password" id="password" name="password" minlength="6" required></p>
-                    <p><label for="confirm">Confirm Password:</label><br><input type="password" id="confirm" name="confirm" minlength="6" required></p>
-                </fieldset>
-                <p><label><input type="checkbox" required> I confirm that the information is correct.</label></p>
-                <p><button type="submit">Create Account</button> <button type="reset">Reset Form</button></p>
-            </form>
-            <p>Already registered? <a href="login.html">Login Here</a></p>
-        </section>
-    </main>
-    <hr>
-    <footer><p>© 2026 Student Portal</p></footer>
+
+    <nav align="center">
+        <table width="100%" bgcolor="#333333" cellpadding="10">
+            <tr>
+                <td align="center">
+                    <a href="Homepage.html"><font color="white">Home</font></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="AboutUs.html"><font color="white">About Us</font></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="Login.html"><font color="white">Login</font></a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <h2 align="center">Create New Account</h2>
+
+    <form>
+        <table align="center" bgcolor="white" cellpadding="10">
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td>Student ID:</td>
+                <td><input type="text" name="studentid" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="confirmPassword" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Create Account">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+
 </body>
 </html>
