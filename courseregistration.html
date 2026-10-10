@@ -1,46 +1,81 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Registration - Student Portal</title>
+    <title>Course Registration</title>
 </head>
-<body>
-    <header>
-        <h1>Course Registration</h1>
-        <nav><a href="homepage.html">Home</a> | <a href="profile.html">Profile</a></nav>
+<body bgcolor="#f2f2f2">
+
+    <header align="center">
+        <table width="100%" bgcolor="#198754" cellpadding="15">
+            <tr>
+                <td align="center">
+                    <font color="white" size="6"><b>Student Portal</b></font>
+                </td>
+            </tr>
+        </table>
     </header>
-    <hr>
-    <main>
-        <section>
-            <h2>Student Information</h2>
-            <form action="#" method="get">
-                <fieldset>
-                    <legend>Personal Details</legend>
-                    <p><label for="name">Full Name:</label><br><input type="text" id="name" name="name" required></p>
-                    <p><label for="studentid">Student ID:</label><br><input type="text" id="studentid" name="studentid" required></p>
-                    <p><label for="email">Email:</label><br><input type="email" id="email" name="email" required></p>
-                    <p><label for="semester">Semester:</label><br>
-                        <select id="semester" name="semester">
-                            <option>Semester 1</option><option>Semester 2</option><option selected>Semester 3</option>
-                            <option>Semester 4</option><option>Semester 5</option><option>Semester 6</option>
-                        </select>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Select Courses</legend>
-                    <p><input type="checkbox" id="java" name="course" value="Java"><label for="java"> Java Programming</label></p>
-                    <p><input type="checkbox" id="cn" name="course" value="CN"><label for="cn"> Computer Networks</label></p>
-                    <p><input type="checkbox" id="web" name="course" value="Web"><label for="web"> Web Development</label></p>
-                    <p><input type="checkbox" id="dsa" name="course" value="DSA"><label for="dsa"> Data Structures</label></p>
-                </fieldset>
-                <p><button type="submit">Submit Registration</button> <button type="reset">Reset</button></p>
-            </form>
-        </section>
-    </main>
-    <hr>
-    <footer><p>© 2026 Student Portal</p></footer>
+
+    <nav align="center">
+        <table width="100%" bgcolor="#333333" cellpadding="10">
+            <tr>
+                <td align="center">
+                    <a href="Homepage.html"><font color="white">Home</font></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="AboutUs.html"><font color="white">About Us</font></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="Login.html"><font color="white">Login</font></a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <h2 align="center">Course Registration</h2>
+
+    <form>
+        <table align="center" bgcolor="white" cellpadding="12">
+            <tr>
+                <td>Student Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Student ID:</td>
+                <td><input type="text" name="studentid" required></td>
+            </tr>
+            <tr>
+                <td>Select Semester:</td>
+                <td>
+                    <select name="semester">
+                        <option>Semester 1</option>
+                        <option>Semester 2</option>
+                        <option>Semester 3</option>
+                        <option>Semester 4</option>
+                        <option>Semester 5</option>
+                        <option>Semester 6</option>
+                        <option>Semester 7</option>
+                        <option>Semester 8</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Course:</td>
+                <td>
+                    <select name="course">
+                        <option>Java</option>
+                        <option>Data Structures and Algorithms</option>
+                        <option>Computer Networks</option>
+                        <option>Web Development</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+
 </body>
 </html>
-```
