@@ -1,32 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Student Portal</title>
+    <title>Student Login</title>
 </head>
-<body>
-    <header>
-        <h1>Student Portal Login</h1>
-        <nav><a href="homepage.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="newaccount.html">Create Account</a></nav>
+<body bgcolor="#f2f2f2">
+
+    <header align="center">
+        <table width="100%" bgcolor="#198754" cellpadding="15">
+            <tr>
+                <td align="center">
+                    <font color="white" size="6"><b>Student Portal</b></font>
+                </td>
+            </tr>
+        </table>
     </header>
-    <hr>
-    <main>
-        <section>
-            <h2>Login to Your Account</h2>
-            <form action="#" method="get">
-                <fieldset>
-                    <legend>Login Details</legend>
-                    <p><label for="userid">Email or Student ID:</label><br><input type="text" id="userid" name="userid" required></p>
-                    <p><label for="password">Password:</label><br><input type="password" id="password" name="password" required></p>
-                    <p><button type="submit">Login</button> <button type="reset">Clear</button></p>
-                </fieldset>
-            </form>
-            <p>New student? <a href="newaccount.html">Create an Account</a></p>
-        </section>
-    </main>
-    <hr>
-    <footer><p>© 2026 Student Portal</p></footer>
+
+    <nav align="center">
+        <table width="100%" bgcolor="#333333" cellpadding="10">
+            <tr>
+                <td align="center">
+                    <a href="Homepage.html"><font color="white">Home</font></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="AboutUs.html"><font color="white">About Us</font></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="Login.html"><font color="white">Login</font></a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <h2 align="center">Student Login</h2>
+
+    <form>
+        <table align="center" bgcolor="white" cellpadding="12">
+            <tr>
+                <td>Student ID:</td>
+                <td><input type="text" name="studentid" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <a href="NewAccount.html">Create New Account</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+
 </body>
 </html>
